@@ -1,0 +1,66 @@
+# ------------------------
+# Compiled output / Build
+# ------------------------
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/coverage
+/.angular/cache
+/.angular/linter/
+
+# ------------------------
+# Node
+# ------------------------
+/node_modules
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------
+# IDEs and editors
+# ------------------------
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# ------------------------
+# Environment / Secrets
+# ------------------------
+.env
+.env.local
+.env.*.local
+
+# Docker overrides / environment files (mantener Dockerfile principal)
+docker-compose.override.yml
+*.env.*      # archivos de entorno locales para Docker
+
+# ------------------------
+# Miscellaneous / Temporary
+# ------------------------
+.sass-cache/
+.connect.lock
+/libpeerconnection.log
+testem.log
+/typings
+*.bak
+*.tmp
+*.cache
+
+# ------------------------
+# System files
+# ------------------------
+.DS_Store
+Thumbs.db

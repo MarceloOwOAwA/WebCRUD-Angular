@@ -1,0 +1,25 @@
+services:
+  angular:
+    build: .
+    container_name: angular_dev
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - redprueba
+    entrypoint: >
+      sh -c "
+      if [ ! -f angular.json ]; then
+        echo 'No existe proyecto Angular, creándolo...';
+        ng new webcrudapp --directory ./ --defaults --skip-git;
+      fi &&
+      ng serve --host 0.0.0.0 --poll 2000
+      "
+
+networks:
+  redprueba:
+    external: true
+
+  

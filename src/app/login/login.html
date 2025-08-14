@@ -1,0 +1,23 @@
+<h1>Login</h1>
+<div class="form-wrapper">
+  <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="formulariologin">
+    <label>
+      Email:
+      <input formControlName="email" type="email" placeholder="ejemplo@mail.com">
+    </label>
+
+    <label>
+      Contraseña:
+      <input formControlName="password" type="password" placeholder="Mín 8 caracteres">
+    </label>
+
+    <button type="submit" [disabled]="regForm.invalid">Iniciar Sesión</button>
+  </form>
+
+  <!-- Mensaje visual -->
+    <div *ngIf="mensaje" class="alert mt-3" 
+     [ngClass]="{'alert-success': tipoMensaje === 'success', 'alert-danger': tipoMensaje === 'danger'}"
+     [innerHTML]="mensaje">
+    </div>
+
+</div>

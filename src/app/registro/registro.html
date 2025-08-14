@@ -1,0 +1,34 @@
+<h1>Registro</h1>
+<div class="form-wrapper">
+  <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="formularioregistro">
+  <label>
+    Nombre:
+    <input formControlName="name" placeholder="Mín 3 letras">
+  </label>
+
+  <label>
+    Email:
+    <input formControlName="email" type="email" placeholder="ejemplo@mail.com">
+  </label>
+
+  <label>
+    Contraseña:
+    <input formControlName="password" type="password" placeholder="Mín 6 caracteres">
+  </label>
+  <label>
+    Codigo Pais:
+    <input formControlName="countrycode" type="number" placeholder="56">
+  </label>
+  <label>
+    Prefijo:
+    <input formControlName="devicecode" type="number" placeholder="9">
+  </label>
+
+  <label>
+    Numero de telefono:
+    <input formControlName="number" type="number" placeholder="12121212">
+  </label>
+
+  <button type="submit" [disabled]="regForm.invalid">Crear cuenta</button>
+</form>
+</div>

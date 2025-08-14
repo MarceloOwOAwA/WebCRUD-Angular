@@ -1,0 +1,35 @@
+.navbar {
+        background-color: #292929;
+        padding: 25px;
+}
+.navbar ul {
+        list-style: none;
+        display: flex;
+        margin:0;;
+        padding: 0%;
+        justify-content: flex-end;
+}
+.navbar a {
+        color:#292929;
+        text-decoration: none;
+}
+.navbar a:hover {
+        text-decoration: underline;
+}
+.navbar li {
+        margin-right: 20px;
+}
+.btnnav {display: inline-block;
+  padding: 8px 16px;
+  background-color: #F1F1F1; /* azul bonito */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnnav:hover {
+  background-color: #0056b3; /* azul más oscuro al pasar mouse */
+}

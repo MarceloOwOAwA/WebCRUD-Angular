@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <ul>
+        <li><a routerLink="/registro"class="btnnav">Registro</a></li>
+        <li><a routerLink="/login"class="btnnav">Login</a></li>
+        <li><a routerLink="/deleteaccount"class="btnnav">DeleteAccount</a></li>
+    </ul>
+</nav>
+
+<h1>Bienvenido a mi pagina de demostracion para creacion y login de usuarios</h1>
+
+<p>Esta es una aplicacion de ejemplo para demostrar la creacion y login de usuarios. aqui se conectara con otro docker
+    que contiene API y Mongodb7 para realizar las operaciones CRUD, asegurando ademas seguridad informatica y autenticacion
+    de usuarios con JWT.
+</p>
+
+<p>Para comenzar es necesario que crees una cuenta utilizando la pagina o la API en el otro contenedor, para facilidad de uso 
+    dejare el link para que puedas descargar el contenedor del API aqui:<a href="https://github.com/MarceloOwOAwA/Docker-API-REST-Mongodb7-CRUD-USUARIOS/tree/main" target="_blank" rel="noopener noreferrer">
+    github.com
+  </a>
+</p>
+
+<router-outlet></router-outlet>
