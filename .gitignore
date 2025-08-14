@@ -1,25 +1,17 @@
-# ------------------------
-# Compiled output / Build
-# ------------------------
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
-/coverage
-/.angular/cache
-/.angular/linter/
 
-# ------------------------
 # Node
-# ------------------------
 /node_modules
-npm-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+npm-debug.log
+yarn-error.log
 
-# ------------------------
 # IDEs and editors
-# ------------------------
 .idea/
 .project
 .classpath
@@ -36,31 +28,15 @@ pnpm-debug.log*
 !.vscode/extensions.json
 .history/*
 
-# ------------------------
-# Environment / Secrets
-# ------------------------
-.env
-.env.local
-.env.*.local
-
-# Docker overrides / environment files (mantener Dockerfile principal)
-docker-compose.override.yml
-*.env.*      # archivos de entorno locales para Docker
-
-# ------------------------
-# Miscellaneous / Temporary
-# ------------------------
+# Miscellaneous
+/.angular/cache
 .sass-cache/
-.connect.lock
+/connect.lock
+/coverage
 /libpeerconnection.log
 testem.log
 /typings
-*.bak
-*.tmp
-*.cache
 
-# ------------------------
 # System files
-# ------------------------
 .DS_Store
 Thumbs.db
